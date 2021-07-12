@@ -41,13 +41,62 @@ main {
 
 .container{
     width: 870px;
-    max-width: 100%;
     padding: 30px;
     margin: 11px 0;
     border-radius: 5px;
     background-color: #fff;
 }
+/* Header code start */
+#header{
+    background-color:#562EFF ;
+    margin: 0 auto;
+}
+nav{display: flex;
+    justify-content: space-between;
+}
+nav h2,nav a{color: #fff;}
+nav img{
+    width: 40px;
+    height: 52px;
+    margin-right: 20px;
+}
+.logo{display: flex;}
+nav ul li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+.nav-menu{
+ margin: 0 auto;
+ align-items: center;
+ background-color: #562EFF;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* .dropdown:hover .dropdown-content {display: block;} */
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 /* Top Player Code Start */
 h2{
     color: var(--h2-color);
@@ -112,4 +161,24 @@ margin:30px 0;
     background-color: #FFE4E8;
 }
 
+/* Menu */
+
+/* Responsive for Mobile */
+@media  (max-width:660px) {
+    .container{
+        width:75%;
+        align-items: center;
+    }
+    .menu{display: none;}
+    .dropdown {
+  display: block;
+}
+    .players,.top-blogs,.courses {
+    grid-template-columns:1fr;
+}
+.player,.blog {
+    flex-direction: column;
+}
+    
+}
 
