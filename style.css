@@ -17,3 +17,53 @@ Reset Screen
     --h2-color:#562EFF;
     --span-course:#ED6B4F;
 }
+
+body{font-size: 18px;
+    font-family: poppins;
+    line-height: 24px;
+    background-color: #9F9F9F;
+
+}
+img{
+    max-width: 100%;
+}
+main{
+display: flex;
+justify-content: center;
+}
+
+.container{
+    width: 870px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+/* Top Player Code Start */
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 65px;
+    width: 65px;
+    margin: 0 16px 0 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 29px;
+}
+
+/* Top blog code start */
+
+.blog img{
+    width: 177px;
+    height: 117px;    
+}
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
