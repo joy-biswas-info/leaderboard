@@ -11,3 +11,9 @@ Reset Screen
 }
 
 /* Reuseable component */
+:root{
+    --h2-size:24px;
+    --h2-line-height:36px;
+    --h2-color:#562EFF;
+    --span-course:#ED6B4F;
+}
