@@ -8,6 +8,7 @@ Reset Screen
     outline: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 /* Reuseable component */
@@ -27,6 +28,9 @@ body{font-size: 18px;
     background-color: #9F9F9F;
 
 }
+p>span{
+    color: blue;
+}
 
 /* img{
     max-width: 100%;
@@ -38,18 +42,26 @@ main {
     flex-direction: column;
     align-items: center;
 }
-
 .container{
+    max-width: 100%;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+}
+.content{
     width: 870px;
     padding: 30px;
     margin: 11px 0;
     border-radius: 5px;
     background-color: #fff;
+    margin: 0 auto;
 }
 /* Header code start */
 #header{
     background-color:#562EFF ;
     margin: 0 auto;
+}
+.header-content{
+    background-color:#562EFF ;
 }
 nav{display: flex;
     justify-content: space-between;
@@ -139,7 +151,12 @@ margin:30px 0;
 /* Latest course Code Start */
 .courses{
     display: grid;
+    grid-column-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+}
+.course{
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 5px;
 }
 .course img{width:224px;
     height: 104px;
@@ -164,9 +181,9 @@ margin:30px 0;
 /* Menu */
 
 /* Responsive for Mobile */
-@media  (max-width:660px) {
-    .container{
-        width:75%;
+@media only screen and (max-width: 668px) {
+    .content{
+        width:100%;
         align-items: center;
     }
     .menu{display: none;}
